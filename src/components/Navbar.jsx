@@ -7,6 +7,7 @@ import { MdKeyboardArrowRight, MdMenu, MdClose } from "react-icons/md";
 import { useState } from "react";
 import Button from "./Button";
 import { FaArrowRightLong } from "react-icons/fa6";
+import logo from "/images/logo.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,7 +16,7 @@ const Navbar = () => {
     <nav className="bg-black text-white p-4 flex justify-between items-center sticky top-0 z-10">
       {/* Left Side: Logo */}
       <div className="flex items-center space-x-2 w-[120px] h-[40px]">
-        <img src="src/images/logo.png" alt="Logo" />
+        <img src={logo} alt="Logo" />
       </div>
 
       {/* Middle: Navigation Links - Hidden on smaller screens */}

@@ -1,11 +1,12 @@
 import { FaArrowRightLong } from "react-icons/fa6";
 import Button from "./Button.jsx";
 import { FaStar } from "react-icons/fa";
-import one from "@/images/one.jpg";
-import second from "@/images/second.jpg";
-import thrid from "@/images/thrid.jpg";
-import fourth from "@/images/fourth.jpg";
-import backgrandImg from "@/images/backgrand-img.png";
+import one from "/images/one.jpg";
+import second from "/images/second.jpg";
+import thrid from "/images/thrid.jpg";
+import fourth from "/images/fourth.jpg";
+import backgrandImg from "/images/backgrand-img.png";
+import speaker from "/images/speaker.png";
 
 const HeroSection = () => {
   return (
@@ -19,7 +20,7 @@ const HeroSection = () => {
           <br />
           Stories
           <img
-            src="src/images/speaker.png"
+            src={speaker}
             alt="Speaker Icon"
             className="inline-block size-16 bg-[#2ABAB1] rounded-full p-1 mx-2 align-middle mb-4"
           />
