@@ -5,6 +5,7 @@ import one from "@/images/one.jpg";
 import second from "@/images/second.jpg";
 import thrid from "@/images/thrid.jpg";
 import fourth from "@/images/fourth.jpg";
+import backgrandImg from "@/images/backgrand-img.png";
 
 const HeroSection = () => {
   return (
@@ -60,7 +61,7 @@ const HeroSection = () => {
         </marquee>
 
         <img
-          src="src/images/backgrand-img.png"
+          src={backgrandImg}
           style={{
             position: "relative",
             width: "100%", // Wrap percentage values in quotes
