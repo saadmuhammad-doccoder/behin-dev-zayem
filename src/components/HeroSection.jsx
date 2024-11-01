@@ -55,10 +55,10 @@ const HeroSection = () => {
             textAlign: "center",
           }}
         >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
-          minima animi amet fugiat fuga, architecto, molestiae accusamus iure
-          dolores aperiam facere ducimus! Inventore voluptatibus, molestias
-          neque suscipit pariatur saepe necessitatibus.
+          Lorem ipsum sit amet consectetur adipisicing elit. Excepturi minima
+          animi amet fugiat fuga, architecto, molestiae accusamus iure dolores
+          aperiam facere ducimus! Inventore voluptatibus, molestias neque
+          suscipit pariatur saepe necessitatibus.
         </marquee>
 
         <img
