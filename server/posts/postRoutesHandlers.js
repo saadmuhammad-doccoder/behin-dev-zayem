@@ -12,8 +12,9 @@ async function getAllPostsReqHandler(req, res) {
 async function getPostByIdReqHandler(req, res) {
   try {
     const parsedId = parseInt(req.params.id);
-    const posts = await getPostbyId(parsedId);
-    res.json(posts);
+    const post = await getPostbyId(parsedId);
+    if (!post) throw new Error("There was an error while fetching the post.");
+    res.json(post);
   } catch (e) {
     res.status(500).json({ message: "Failed to fetch post." });
   }
@@ -26,7 +27,6 @@ async function createPostReqHandler(req, res) {
 
     const { title, content, author } = req.body;
 
-    console.log(title, content, author);
     if (!title || !content || !author)
       throw new Error("Could not create post.");
 

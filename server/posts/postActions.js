@@ -10,6 +10,7 @@ async function getAllPosts() {
     return posts;
   } catch (e) {
     console.error(e);
+    return e;
   }
 }
 
@@ -20,6 +21,7 @@ async function getPostbyId(id) {
     return post;
   } catch (e) {
     console.error(e);
+    return e;
   }
 }
 
@@ -35,6 +37,7 @@ async function createPost({ title, content, author }) {
     });
   } catch (e) {
     console.error(e);
+    return e;
   }
 }
 
